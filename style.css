@@ -1,6 +1,6 @@
 /* for background */
 body{
-
+ 
  background-color:#6648B1;
  background-image: url(Images/bg-desktop.svg);
  background-blend-mode: lighten;
@@ -9,13 +9,13 @@ body{
 /* for left column{i could use new class too} */
 .logo,.img-fluid{
     margin-top: 50px;
-    padding-left: 100px;
+    padding-left: 80px;
+
    
 }
 
 /* for right column */
 .text{
-    padding-left: 10px;
     padding-right: 100px;
     padding-top:50px;
     margin-top: 40px;
@@ -33,7 +33,7 @@ p{
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     padding-right:10%;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 /* Button */
 .btn {
