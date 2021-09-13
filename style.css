@@ -1,0 +1,122 @@
+/* for background */
+body{
+
+ background-color:#6648B1;
+ background-image: url(Images/bg-desktop.svg);
+ background-blend-mode: lighten;
+}
+
+/* for left column{i could use new class too} */
+.logo,.img-fluid{
+    margin-top: 50px;
+    padding-left: 100px;
+}
+
+/* for right column */
+.text{
+    padding-right: 100px;
+    padding-top:50px;
+
+}
+
+/* Content in right column */
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding-right: 5%;
+}
+/* Button */
+.btn {
+    margin-top: 5%;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Open Sans';
+    color: #6648B1;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 2% 13% 2% 13%;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #e882e8;
+    text-decoration: none;
+  }
+
+  /* for icons at footer */
+  .footer{
+
+      margin: 1% ;
+      text-align: right;
+
+  }
+  .footer-icons{
+
+      border-radius: 100%;
+      border-color: #fff;
+      color:#fff;
+      padding: 2% 1%;
+
+  }
+  .footer-icons:hover{
+      color:#e882e8; ;
+  }
+
+  /* for screens whose width is less than 1020px */
+  /* Most likely for phone */
+
+  @media(max-width:1020px)
+  {
+    body{
+        background-image: url(Images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .logo{
+        position: relative;
+        position: relative;
+        right: 50%;
+      margin-top: 25px;
+      margin-bottom: 25px;
+        height: 35px
+    }
+    .img-fluid{
+        padding: 5%;
+    }
+    .text{
+        padding: 4%;
+        text-align: center;
+    }
+    h1{
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+    p{
+        padding: 6%;
+        padding-top: 0px;
+    }
+    .footer{
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+/* So the backgrounf remains same for screen bigger than phone and smaller than laptop */
+@media(min-width:752px)
+{
+    body{
+        background-image: url(Images/bg-desktop.svg);
+    }
+    .text{
+        padding: 4%;
+        text-align: left;
+    }
+}
